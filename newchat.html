@@ -130,15 +130,16 @@
         .user-message {
             align-self: flex-end;
             background-color: #0084ff;
-            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
-            backdrop-filter: blur(6px);
+            background-color: black;
+            color: #fa0ac6;
+           
         }
 
         .bot-message {
             align-self: flex-start;
-            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
-            backdrop-filter: blur(6px);
-            color: #333;
+            background-color: black;
+            
+            color: #fa0ac6;
         }
 
         .chat-input {
@@ -166,7 +167,7 @@
             border-radius: 5px;
             cursor: pointer;
         }
-
+      
         .chat-input button:hover {
             background-color: #fa0ac6;
         }
@@ -241,7 +242,7 @@
             </div>
             <div class="chat-input">
                 <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off" />
-                <button id="send-btn">Send</button>
+                <button id="send-btn" onclick="sendMesasage()">Send</button>
             </div>
         </div>
     </div>
